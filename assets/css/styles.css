@@ -7,9 +7,6 @@ body {
     background-attachment: fixed;
 }
 .logo-container {
-    text-align: center;
-    padding: 100px;
-    color: rgb(31, 31, 31);
 }
 
 p {
@@ -24,12 +21,9 @@ hr  {
 .logo {
     width: 400px;
     display: block;
+    padding-top: 5em;
     margin: 0 auto;
-    position: fixed;
-    top: 33%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
 }
 
 .center-header {
@@ -38,15 +32,13 @@ hr  {
 }
 
 .info-container {
-    width: 25%;
     background-color: rgb(241, 241, 241);
-    padding-top: 1px;
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 10px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
     flex: 1; /* Allows each container to grow equally */
-    margin: 20em 10px; /* Optional: Adjusts margins if necessary */
+    margin: 0 10px; /* Optional: Adjusts margins if necessary */
 }
 
 .info-container-wrapper {
@@ -72,7 +64,7 @@ hr  {
     }
 
     .logo {
-        width: 240px; /* Adjust logo size for smaller screens */
-        top: 120px; /* Adjust logo position */
+        width: 300px; /* Adjust logo size for smaller screens */
+        padding-top: 0;
     }
 }
