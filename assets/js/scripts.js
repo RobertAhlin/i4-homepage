@@ -13,15 +13,23 @@ readMoreLinks.forEach(link => {
         event.preventDefault();
         var modalId = link.getAttribute("data-modal");
         var modal = document.getElementById(modalId);
-        modal.style.display = "block";
+        var modalContent = modal.querySelector(".modal-content");
+        modalContent.style.animation = 'slideDown 0.5s ease forwards';
+        modal.classList.add("show");
     }
 });
 
-// Function to close the modal
+// Function to close the modal with slide-out effect
 closeButtons.forEach(button => {
     button.onclick = function() {
         var modal = this.closest(".modal");
-        modal.style.display = "none";
+        var modalContent = modal.querySelector(".modal-content");
+        modalContent.style.animation = 'slideLeft 0.5s ease forwards';
+        
+        // Use setTimeout to allow the slide-left animation to finish before hiding the modal
+        setTimeout(() => {
+            modal.classList.remove("show");
+        }, 500); // Duration of the animation
     }
 });
 
@@ -29,7 +37,12 @@ closeButtons.forEach(button => {
 window.onclick = function(event) {
     modals.forEach(modal => {
         if (event.target == modal) {
-            modal.style.display = "none";
+            var modalContent = modal.querySelector(".modal-content");
+            modalContent.style.animation = 'slideLeft 0.5s ease forwards';
+
+            setTimeout(() => {
+                modal.classList.remove("show");
+            }, 500); // Duration of the animation
         }
     });
 }
