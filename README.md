@@ -21,8 +21,8 @@ This project is a simple webpage for i4 Solutions AB. The page is designed to pr
 │   ├── js/  
 │   │   └── scripts.js  
 │   └── images/  
-│   ├── Logo-v4-shadow.png  
-│   └── bg.jpg  
+│       ├── Logo-v4-shadow.png  
+│       └── bg.jpg  
 │  
 └── index.html  
 ```
