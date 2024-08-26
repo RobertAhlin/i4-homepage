@@ -54,10 +54,10 @@ hr  {
 /* Media query for smaller devices */
 @media (max-width: 768px) {
     body {
-        background-size: contain; /* Justera för mindre skärmar */
-        background-attachment: scroll; /* Förhindra fast bakgrund på mobiler */
+        background-size: 100% auto; /* Justera för mindre skärmar */
+        background-attachment: fixed; /* Förhindra fast bakgrund på mobiler */
     }
-    
+
     .info-container-wrapper {
         flex-direction: column; /* Stack containers vertically */
         align-items: center; /* Center containers horizontally */
