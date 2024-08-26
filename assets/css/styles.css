@@ -54,8 +54,11 @@ hr  {
 /* Media query for smaller devices */
 @media (max-width: 768px) {
     body {
-        background-size: 100% auto; /* Justera för mindre skärmar */
-        background-attachment: fixed; /* Förhindra fast bakgrund på mobiler */
+        background-image: url("../images/bg.jpg"), linear-gradient(to bottom, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%);
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
     .info-container-wrapper {
