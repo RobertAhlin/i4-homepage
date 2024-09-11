@@ -2,7 +2,7 @@
 // Send message from contact form
 function sendMail(contactForm) {
     emailjs.init("sKLGmElmQrqhdKkiF");
-    emailjs.send("service_ipclfkf", "rahlin_cv-site", {
+    emailjs.send("service_ipclfkf", "i4-solutions-ab", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.email.value,
         "message": contactForm.messagelines.value
