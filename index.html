@@ -46,7 +46,26 @@
         <div class="info-container">
             <h1 class="center-header">KONTAKT</h1>
             <hr>
-            <p>mail: info@i4solutions.se</p>
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col">           
+                        <div class="center-form">
+                            <form onsubmit="return sendMail(this);">
+                                <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                                <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
+                                    required />
+                                <textarea rows="5" name="messagelines" id="messagelines" class="form-control"
+                                    placeholder="Message" required></textarea>
+                                <div class="form-row text-center">
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-secondary">Send Project Request</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+            
+                    </div>
+                </div>
         </div>
         <!-- OMDÖMEN Section -->
         <div class="info-container">
@@ -92,5 +111,6 @@
     </div>
 
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>

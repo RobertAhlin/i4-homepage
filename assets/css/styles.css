@@ -6,8 +6,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.logo-container {
-}
+
+.logo-container {}
 
 p {
     font-size: 16px;
@@ -136,4 +136,92 @@ hr  {
     to {
         transform: translateX(-120%); /* Move completely out to the left */
     }
+}
+
+/*--------------------------------------------Contact Form Styles */
+
+/* Container styling */
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Column styling */
+.col {
+    flex: 1 0 0%;
+}
+
+/* Contact Heading */
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Sub-heading */
+h5 {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Form styling */
+
+.form-control {
+    display: block;
+    width: 90%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 5px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Button styling */
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #8b8b8b;
+    color: #fafafa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e3ecc;
+}
+
+/* Text alignment for form-row */
+.form-row {
+    display: flex;
+    justify-content: center;
 }
